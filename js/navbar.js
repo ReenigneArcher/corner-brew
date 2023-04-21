@@ -10,7 +10,7 @@ navbar_element.innerHTML = `
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand fw-bold" href="/">
-                    <img src="/dist/assets/images/favicon-32x32.png" alt=""> The Corner Brew
+                    <img src="https://reenignearcher.github.io/corner-brew/assets/images/favicon-32x32.png" alt=""> The Corner Brew
                 </a>
             </div>
             <div class="navbar-header">
