@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Corner Brew</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="The Corner Brew" />
+        <meta name="author" content="" />
+
+        <!-- Open Graph/Twitter metadata -->
+        <meta property="og:site_name" content="The Corner Brew" />
+        <meta property="og:title" content="The Corner Brew" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://reenignearcher.github.io/corner-brew/assets/images/og-image.png" />
+        <meta property="og:url" content="https://thecornerbrew.com" />
+        <meta property="og:description" content="The Corner Brew" />
+        <meta property="og:locale" content="en-US" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="og:twitter_site" content="@lizardbytedev" />
+        <meta property="og:twitter_site:id" content="@lizardbytedev" />
+        <meta property="og:twitter_creator" content="@lizardbytedev" />
+        <meta property="og:twitter_creator:id" content="@lizardbytedev" />
+        <meta property="twitter:image" content="https://reenignearcher.github.io/corner-brew/assets/images/og-image.png" />
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+        <!-- FontAwesome-->
+        <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+        <!-- Bootstrap theme-->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom css-->
+        <link href="css/custom.css" rel="stylesheet" />
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    </head>
+    <body class="d-flex flex-column h-100 bg-dark-gray">
+        <main class="flex-shrink-0 overflow-hidden">
+            <!-- Navigation-->
+            <nav id="nav-container"></nav>
+
+            <!-- Header-->
+            <header class="bg-secondary-normal py-0">
+                <section class="offset-anchor" id="Home">
+                    <div id="carousel1" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel"
+                         style="height:50vh">
+                      <!--Indicators-->
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                class="active bg-secondary-dark" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                                class="bg-secondary-dark" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                                class="bg-secondary-dark" aria-label="Slide 3"></button>
+                      </div>
+                      <!--/.Indicators-->
+                      <!--Slides-->
+                      <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                          <div class="view">
+                            <img  src="assets/images/banner-carousel.png" alt="">
+                            <div class="mask rgba-black-light"></div>
+                          </div>
+<!--                              <div class="carousel-caption">-->
+<!--                                <h3 class="h3-responsive">1</h3>-->
+<!--                                <p>First text</p>-->
+<!--                              </div>-->
+                        </div>
+                        <div class="carousel-item">
+                          <!--Mask color-->
+                          <div class="view">
+                            <img  src="assets/images/337245242_757846142472420_3807776104334595792_n.jpg" alt="">
+                            <div class="mask rgba-black-strong"></div>
+                          </div>
+<!--                              <div class="carousel-caption">-->
+<!--                                <h3 class="h3-responsive">2</h3>-->
+<!--                                <p>Secondary text</p>-->
+<!--                              </div>-->
+                        </div>
+                        <div class="carousel-item">
+                          <!--Mask color-->
+                          <div class="view">
+                            <img  src="assets/images/340860548_746438967128139_3824914856384175240_n.jpg" alt="">
+                            <div class="mask rgba-black-slight"></div>
+                          </div>
+<!--                              <div class="carousel-caption">-->
+<!--                                <h3 class="h3-responsive">3</h3>-->
+<!--                                <p>Third text</p>-->
+<!--                              </div>-->
+                        </div>
+                      </div>
+                      <!--/.Slides-->
+<!--                      <div>-->
+<!--                          <h1 class="carousel-overlay-title display-5 fw-bolder text-white mb-2">The Corner Brew</h1>-->
+<!--                          <p class="carousel-overlay-subtitle lead fw-bolder text-white-50 mb-4">-->
+<!--                              coffee shop & event space</p>-->
+<!--                      </div>-->
+                      <!--Controls-->
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                              data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                              data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      <!--/.Controls-->
+                    </div>
+                </section>
+            </header>
+
+            <!-- About section-->
+            <section class="bg-secondary-dark py-5 offset-anchor" id="About">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder text-white mb-3">About</h2></div>
+                    </div>
+                    <div class="row">
+                        <!-- drinks -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-medium border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-mug-hot fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <a class="stretched-link" href="#menu-drink"></a>
+                                            <h4 class="fw-bolder text-white mb-1">Drinks</h4>
+                                            <p class="mb-0 text-white-50">The Corner Brew offers a variety of coffee and drinks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- food -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-medium border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-stroopwafel fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <a class="stretched-link" href="#menu-food"></a>
+                                            <h4 class="fw-bolder text-white mb-1">Food</h4>
+                                            <p class="mb-0 text-white-50">Yummy food and snacks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- events -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-medium border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-calendar-days fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <a class="stretched-link" href="#Events"></a>
+                                            <h4 class="fw-bolder text-white mb-1">Events</h4>
+                                            <p class="mb-0 text-white-50">Rent out our space to host your business or casual events.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!--            &lt;!&ndash; Testimonial section&ndash;&gt;-->
+<!--            <section class="bg-secondary-medium py-5 offset-anchor" id="Testimonials">-->
+<!--                <div class="container px-5 my-5">-->
+<!--                    <div class="row gx-5 justify-content-center">-->
+<!--                        <div class="col-lg-10 col-xl-7">-->
+<!--                            <div class="text-center text-white">-->
+<!--                                <div class="fs-4 mb-4 fst-italic">"The Corner Brew is amazing!"</div>-->
+<!--                                <div class="d-flex align-items-center justify-content-center">-->
+<!--                                    <img class="rounded-circle me-3"-->
+<!--                                         src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />-->
+<!--                                    <div class="fw-bold">-->
+<!--                                        John Doe-->
+<!--                                        <span class="fw-bold text-warning mx-1">/</span>-->
+<!--                                        Local Guide-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+
+            <!-- Menu section-->
+            <section class="bg-secondary-dark py-5 offset-anchor" id="Menu">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="text-center text-white">
+                                <h2 class="fw-bolder mb-3">Menu</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-5" id="menu-container">
+                        <!-- display menu images -->
+                        <div class="offset-anchor" id="menu-drink">
+                            <img src="assets/images/menu-drink.jpg" class="img-thumbnail mb-3" alt="..." />
+                        </div>
+                        <div class="offset-anchor" id="menu-food">
+                            <img src="assets/images/menu-food.jpg" class="img-thumbnail mb-3" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact section-->
+            <section class="bg-secondary-medium py-5 offset-anchor" id="Contact">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder text-white mb-3">Contact</h2></div>
+                    </div>
+                    <div class="row">
+                        <!-- Address -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-dark border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-map-location-dot fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <!-- link to google maps -->
+                                            <a href="https://goo.gl/maps/XH9ssv113WBREobz7" class="text-decoration-none text-info" target="_blank">
+                                                1 West Main Street<br>
+                                                Dryden, New York 13053
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-dark border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-phone fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <!-- link to call phone number -->
+                                            <a href="tel:607-708-4288" class="text-decoration-none text-info">(607) 708-4288</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-dark border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-envelope fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <!-- link to email -->
+                                            <a href="mailto:info@thecornerbrew.com " class="text-decoration-none text-info">info@thecornerbrew.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hours -->
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="card bg-secondary-dark border-0 shadow mb-5">
+                                <div class="card-body text-center p-4">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa-fw fas fa-clock fa-2x text-white-50"></i>
+                                        </div>
+                                        <div class="flex-grow-1 ms-3 text-start">
+                                            <p class="mb-0 text-white-50">Monday: 7 AM-2 PM<br>
+                                            Tuesday: 7 AM-2 PM<br>
+                                            Wednesday: 7 AM-2 PM<br>
+                                            Thursday: 7 AM-2 PM<br>
+                                            Friday: 7 AM-2 PM<br>
+                                            Saturday: 8 AM - 1 PM<br>
+                                            Sunday: Closed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Map embed -->
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.056115669409!2d-76.30049032357994!3d42.490359626859124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89da7be0ca5caf85%3A0x9cccf879e2af792!2sThe%20Corner%20Brew!5e0!3m2!1sen!2sus!4v1682095145621!5m2!1sen!2sus"
+                                class="rounded-3 border-0"
+                                width="100%"
+                                height="450"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+
+                    <!-- Social -->
+                    <div class="col-lg-4 col-xl-3 mt-3">
+                        <div class="card bg-secondary-dark border-0 shadow mb-5">
+                            <div class="card-body text-center p-4">
+                                <div class="d-flex justify-content-center">
+                                    <div class="flex-grow-0">
+                                        <a href="https://www.facebook.com/people/The-Corner-Brew/100090140093281/" target="_blank" class="text-decoration-none text-info"><i class="fa-fw fab fa-facebook fa-2x text-white-50"></i> Facebook</a>
+                                    </div>
+                                    <div class="flex-grow-1 text-start ms-5">
+                                        <a href="https://www.instagram.com/thecornerbrew_dryden/" target="_blank" class="text-decoration-none text-info"><i class="fa-fw fab fa-instagram fa-2x text-white-50"></i> Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section class="bg-secondary-dark py-5 offset-anchor" id="Events">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder text-white mb-3">Events</h2></div>
+                    </div>
+                    <div class="row">
+                        <!-- hex background color is after %23 -->
+                        <!-- mode choices = WEEK, MONTH, AGENDA -->
+                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%231d1c18&color=%2337342e&ctz=America%2FNew_York&showTitle=0&showNav=1&showDate=0&showPrint=0&showTabs=1&showCalendars=0&showTz=1&mode=MONTH&src=1443a57771b0669522af950d9b05f6508a6f830096fefaebb473e62a4210124d%40group.calendar.google.com"
+                                class="rounded-3 border-0"
+                                width="100%"
+                                height="600"
+                                frameborder="0"
+                                scrolling="no">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer-->
+        <footer class="bg-secondary-dark py-4 mt-auto" id="footer-container"></footer>
+        <!-- Bootstrap core JS-->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- load image mods -->
+        <script src="js/image-mods.js"></script>
+
+        <!-- Get navbar -->
+        <script src="js/navbar.js"></script>
+        <!-- Get footer -->
+        <script src="js/footer.js"></script>
+    </body>
+</html>

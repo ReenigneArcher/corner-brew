@@ -1,0 +1,67 @@
+---
+name: Build
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Checkout gh-pages
+        uses: actions/checkout@v3
+        with:
+          ref: gh-pages
+          path: gh-pages
+          persist-credentials: false  # otherwise, the token used is the GITHUB_TOKEN, instead of the personal token
+          fetch-depth: 0  # otherwise, will fail to push refs to dest repo
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Build website
+        run: |
+          # install npm dependencies
+          npm install
+
+          # empty contents of gh-pages
+          rm -f -r ./gh-pages/*
+
+          # copy contents of dist to gh-pages
+          # mv fails to move hidden files
+          cp -r ./dist/. ./gh-pages/
+
+          # move node_modules directory to gh-pages
+          mv -f ./node_modules/ ./gh-pages/
+
+      - name: Upload Artifacts
+        if: ${{ github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: gh-pages
+          if-no-files-found: error  # 'warn' or 'ignore' are also available, defaults to `warn`
+          path: |
+            ${{ github.workspace }}/gh-pages
+            !**/*.git
+
+      - name: Deploy to gh-pages
+        if: >-
+          (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        uses: actions-js/push@v1.4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: gh-pages
+          branch: gh-pages
+          force: false
+          message: automatic-update-${{ steps.date.outputs.date }}

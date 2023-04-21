@@ -1,0 +1,6 @@
+# ignore JetBrains project
+.idea/
+
+# ignore node modules
+node_modules/
+package-lock.json
