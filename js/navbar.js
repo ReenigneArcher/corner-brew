@@ -11,6 +11,7 @@ navbar_element.innerHTML = `
             <div class="navbar-header">
                 <a class="navbar-brand fw-bold" href="/">
                     <img src="https://reenignearcher.github.io/corner-brew/assets/images/logo-alt-150x150.png"
+                    class="me-3"
                     alt=""
                     style="height: 50px"
                     >The Corner Brew</a>
