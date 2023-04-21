@@ -5,13 +5,15 @@ base_element.setAttribute("data-bs-target", "#nav-container");
 base_element.setAttribute("data-bs-offset", "80");
 
 let navbar_element = document.getElementById("nav-container");
-navbar_element.className = "navbar navbar-expand-lg navbar-dark bg-black fixed-top"
+navbar_element.className = "navbar navbar-expand-lg navbar-dark bg-secondary-dark fixed-top"
 navbar_element.innerHTML = `
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand fw-bold" href="/">
-                    <img src="https://reenignearcher.github.io/corner-brew/assets/images/favicon-32x32.png" alt=""> The Corner Brew
-                </a>
+                    <img src="https://reenignearcher.github.io/corner-brew/assets/images/logo-alt-150x150.png"
+                    alt=""
+                    style="height: 50px"
+                    >The Corner Brew</a>
             </div>
             <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle"
