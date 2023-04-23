@@ -1,4 +1,4 @@
-document.getElementById("footer-container").className = "bg-dark py-4 mt-auto"
+document.getElementById("footer-container").className = "bg-secondary-dark py-4 mt-auto"
 document.getElementById("footer-container").innerHTML = `
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
