@@ -9,19 +9,13 @@ const photos_list = [
     '6944.jpg',
     '6945.jpg',
     '6946.jpg',
-    '6947.jpg',
     '6948.jpg',
-    '6949.jpg',
     '6950.jpg',
-    '6951.jpg',
     '6952.jpg',
     '6953.jpg',
     '6954.jpg',
-    '6955.jpg',
     '6956.jpg',
-    '6957.jpg',
     '6958.jpg',
-    '6959.jpg',
 ]
 
 let gallery = document.getElementById('gallery');
